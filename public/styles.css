@@ -1,0 +1,74 @@
+body {
+    background-color: hsl(0, 0%, 90%);
+    align-items: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 100dvh;
+}
+#wrapper {
+    background-color: hsl(198, 100%, 50%);
+    border-radius: 10px;
+    min-width: 600px;
+    align-items: center;
+    display: grid;
+    grid-template-rows: 1fr 50% 20%;
+    grid-template-columns: 100%;
+    justify-content: center;
+    color: black;
+    min-height: 70dvh;
+}
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+#rooms-list {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 10px auto;
+}
+#rooms-list th {
+    border-bottom: 2px solid hsl(0, 0%, 0%);
+}
+.room {
+    text-align: center;
+    padding: 10px;
+}
+.room > * {
+    padding: 10px;
+}
+.room button {
+    background-color: hsl(124, 100%, 26%);
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+}
+#room-form {
+    align-items: stretch;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 20px auto;
+}
+#room-form input {
+    padding: 7px;
+    border-radius: 10px 0 0 10px;
+    border-style: solid;
+    border-right: none;
+    width: 50%;
+}
+#room-form button {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 80%);
+    padding: 7px;
+    border-radius: 0 10px 10px 0;
+    border-style: solid;
+    border-left: none;
+    width: 15%;
+}
+#room-form button:hover,
+#room-form button:focus {
+    background-color: hsl(0, 0%, 60%);
+}
