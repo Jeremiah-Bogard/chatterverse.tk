@@ -1,49 +1,16 @@
 body {
-    background-color: hsl(0, 0%, 90%);
-    align-items: center;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    min-height: 100dvh;
 }
 #wrapper {
-    background-color: hsl(198, 100%, 50%);
-    border-radius: 10px;
-    min-width: 600px;
+    background-color: hsl(190, 100%, 40%);
     align-items: center;
-    display: grid;
-    grid-template-rows: 1fr 50% 20%;
-    grid-template-columns: 100%;
-    justify-content: center;
-    color: black;
-    min-height: 70dvh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
 }
 h1 {
     text-align: center;
     font-size: 2.5em;
-}
-#rooms-list {
-    border-collapse: collapse;
-    width: 90%;
-    margin: 10px auto;
-}
-#rooms-list th {
-    border-bottom: 2px solid hsl(0, 0%, 0%);
-}
-.room {
-    text-align: center;
-    padding: 10px;
-}
-.room > * {
-    padding: 10px;
-}
-.room button {
-    background-color: hsl(124, 100%, 26%);
-    cursor: pointer;
-    color: white;
-    border-radius: 10px;
-    border: none;
-    padding: 10px 20px;
 }
 #room-form {
     align-items: stretch;
@@ -71,4 +38,37 @@ h1 {
 #room-form button:hover,
 #room-form button:focus {
     background-color: hsl(0, 0%, 60%);
+}
+#rooms-list {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    width: 100%;
+}
+.room {
+    background-color: hsla(0, 100%, 100%, 0.4);
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px auto;
+    width: 80%;
+}
+.room > * {
+    padding: 10px;
+}
+.room button {
+    background-color: hsl(130, 100%, 20%);
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+    transition: background-color 200ms ease-in-out;
+}
+.room button:hover,
+.room button:focus {
+    background-color: hsl(130, 100%, 10%);
 }

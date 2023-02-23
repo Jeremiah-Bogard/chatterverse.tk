@@ -3,46 +3,6 @@ let rooms = [
 		name: "Chatterverse",
 		users: [],
 	},
-	{
-		name: "Chatterverse",
-		users: [],
-	},
-	{
-		name: "Chatterverse",
-		users: [],
-	},
-	{
-		name: "Chatterverse",
-		users: [],
-	},
-	{
-		name: "Chatterverse",
-		users: [],
-	},
-	{
-		name: "Chatterverse",
-		users: [],
-	},
-	{
-		name: "Chatterverse",
-		users: [],
-	},
-	{
-		name: "Chatterverse",
-		users: [],
-	},
-	{
-		name: "Chatterverse",
-		users: [],
-	},
-	{
-		name: "Chatterverse",
-		users: [],
-	},
-	{
-		name: "Chatterverse",
-		users: [],
-	},
 ]
 
 function getRooms() {

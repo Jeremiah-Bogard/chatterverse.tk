@@ -10,27 +10,22 @@
 <body>
     <div id="wrapper">
         <h1>Chatterverse</h1>
-        <table id="rooms-list">
-            <tr>
-                <th>Room Name</th>
-                <th>Users in Room</th>
-                <th>Join Room</th>
-            </tr>
-            <% rooms.forEach(room => { %>
-                <tr class="room">
-                    <td><h2><%= room.name %></h2></td>
-                    <td><p>Users: <%= room.users.length %></p></td>
-                    <td><form action="/join-room" method="POST">
-                        <input type="hidden" value="<%= room.name %>" name="roomName">
-                        <button type="submit">Join</button>
-                    </form></td>
-                </tr>
-            <% }) %>
-        </table>
         <form id="room-form" action="/create-room" method="POST">
             <input type="text" placeholder="Enter room name" name="roomName" required>
             <button type="submit">Create</button>
         </form>
+        <div id="rooms-list">
+            <% rooms.forEach(room => { %>
+                <div class="room">
+                    <h2><%= room.name %></h2>
+                    <p>Users: <%= room.users.length %></p>
+                    <form action="/join-room" method="POST">
+                        <input type="hidden" value="<%= room.name %>" name="roomName">
+                        <button type="submit">Join</button>
+                    </form>
+                </div>
+            <% }) %>
+        </div>
     </div>
 </body>
 </html>
